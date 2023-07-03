@@ -1,0 +1,73 @@
+$color-dark-brown: #9B6D3B
+$color-brown: #AE8646
+$color-black: #333333
+$color-green: #03453B 
+$color-light-green: #70A5A0
+$color-new-green: #006A54
+$color-dark-green: #00554E
+$color-white: #FFFFFF
+$color-white-2: #EBEBEB
+$color-grey: #BABABA
+$color-yellow: #FFC549
+$color-red: #E12317
+
+@mixin respond($breakpoint)
+    @if $breakpoint == lap-top
+        @media only screen and (max-width: 1360px)
+            @content
+
+    @if $breakpoint == big-screen
+        @media only screen and (max-width: 1440px)
+            @content 
+
+    
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+    scroll-behavior: smooth
+body
+    
+    font-family: 'Montserrat', sans-serif
+    font-style: normal
+    font-weight: 400
+
+    font-family: 'PT Sans', sans-serif
+    font-style: normal
+    font-weight: 400
+
+    
+
+    
+
+a
+    text-decoration: none
+    color: inherit
+
+.container
+    max-width: 130rem
+    margin: 0 auto
+    @include respond(lap-top)
+        padding: 0 5rem
+    
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+    
+
+

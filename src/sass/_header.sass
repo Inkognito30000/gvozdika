@@ -1,0 +1,190 @@
+
+    
+    
+.green-stripe
+    width: 100%
+    height: 7.5rem
+    background-color: $color-green
+    position: absolute
+    z-index: -2
+    top: 6rem
+
+.bg
+    width: 100%
+    top: 13.5rem
+    position: absolute
+    z-index: -2
+.header-up
+    height: 6rem
+    padding-top: 1rem
+.nav
+    position: relative
+    display: flex
+    color: $color-black
+    &__town
+        display: flex
+        align-items: center
+        margin-right: 12.4rem
+        a
+            display: flex
+            align-items: center
+    &__list
+        display: flex
+        font-size: 1.3rem
+        line-height: 1.7rem
+        list-style: none
+        align-items: center
+        margin-right: 9rem
+    &__item
+        margin-right: 1.5rem
+        &:last-child
+            margin-right: 0rem
+        &:hover .nav-second
+            display: block
+    &__time
+        display: flex
+        align-items: center
+        margin-right: 3rem
+    &__btn
+        font-size: 1.4rem
+        line-height: 1.7rem
+        font-weight: 700
+        color: $color-white-2
+        padding: 1rem 3rem
+        border-radius: .4rem
+        background-color: #B9956F
+        border: none
+        margin-right: 3rem
+        &:hover
+            background-color: #D2A97E
+            cursor: pointer
+        &:link
+            background-color: #987045
+    &__language
+        display: flex
+        align-items: center
+
+.nav-second
+    position: absolute
+    list-style-type: none
+    z-index: 20
+    display: none
+    font-size: 1.3rem
+    line-height: 1.7rem
+    &__item
+        width: auto
+        height: 3.7rem
+        background-color: $color-white
+        border-radius: .4rem
+        padding: 1rem
+        &:hover
+            color: #B9956F
+
+.language
+    font-size: 1.6rem
+    line-height: 2rem
+    margin-right: 0.5rem
+
+.town
+    &__map
+        width: 1.4rem
+        margin-right: 1.1rem
+        transition: all 1s
+    &__text
+        font-size: 1.4rem
+        line-height: 1.8rem
+        margin-right: 0.2rem
+
+.time
+    &__text-1
+        margin-right: 1rem
+        font-size: 1.4rem
+        line-height: 1.8rem
+    &__text-2
+        font-size: 1.2rem
+        line-height: 1.6rem
+        font-weight: 700
+
+.social
+    margin-right: 2.8rem
+    a
+        margin-right: 1rem
+        &:last-child
+            margin-right: 0rem
+    @include respond(lap-top)
+        display: none
+
+.header-down
+    height: 7.6rem
+    display: flex
+    align-items: center
+    margin-bottom: 20rem
+    &__logo
+        margin-right: 2rem
+    &__call
+        display: flex
+        margin-right: 4.5rem
+    a
+        display: flex
+        align-items: center
+        font-size: 1.6rem
+        line-height: 2.1rem
+        font-weight: 700
+        color: $color-white-2
+
+    &__box
+        display: flex
+        margin-right: 0.7rem
+        a
+            margin-right: 1.5rem
+            &:last-child
+                margin-right: 0rem
+
+.header-down__box-text
+    font-size: 1.4rem
+    line-height: 1.8rem
+    font-weight: 400
+    color: $color-white-2
+
+.search
+    position: relative
+    margin-right: 3rem
+    input
+        width: 38rem
+        height: 4rem
+        background-color: $color-green
+        border: .1rem solid $color-grey
+        outline: none
+        border-radius: .4rem
+        font-family: "Montserrat"
+        font-size: 1.4rem
+        line-height: 1.7rem
+        font-weight: 500
+        color: $color-white-2
+        padding: 1.2rem
+        &::placeholder
+            font-size: 1.4rem
+            line-height: 1.7rem
+            font-weight: 500
+            color: #898989
+    button
+        position: absolute
+        right: .5rem
+        top: .7rem
+        background-color: $color-green
+        border: none
+        img
+            background-color: $color-green
+        &:hover
+            cursor: pointer
+    
+
+
+    
+
+
+    
+
+
+    
+            

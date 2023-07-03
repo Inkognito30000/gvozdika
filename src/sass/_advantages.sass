@@ -1,0 +1,33 @@
+.advantages
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(41.9rem, 1fr))
+    grid-template-rows: min-content 1fr 1fr
+    font-family: 'Montserrat'
+    margin-bottom: 5rem
+    gap: 2rem
+    color: $color-white
+    &__title
+        font-size: 3.6rem
+        line-height: 3.6rem
+        font-weight: 500
+        text-align: center
+        grid-column: 1 / -1
+        
+.advantages-card
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    &__img
+        margin-bottom: 1rem
+        width: 5.6rem
+        height: 5.6rem
+    &__title
+        font-size: 2rem
+        line-height: 2.4rem
+        font-weight: 600
+        margin-bottom: 0.5rem
+    &__text
+        font-size: 1.6rem
+        line-height: 2rem
+        max-width: 41rem

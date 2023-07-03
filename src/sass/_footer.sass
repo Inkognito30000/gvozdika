@@ -1,0 +1,182 @@
+footer
+    position: relative
+
+.map
+    position: relative
+    margin-top: -25rem
+    margin-bottom: 5rem
+
+.footer-top
+    font-family: 'Montserrat'
+    color: $color-white
+    display: grid
+    grid-template-columns: repeat(4, min-content)
+    grid-template-rows: repeat(4, min-content)
+    &__logo
+        grid-column: 1 / -1
+        margin-bottom: 3rem
+    &__call
+        display: flex
+        flex-direction: column
+        grid-column: 1 / 2
+        grid-row: 2 / 3
+        font-size: 1.8rem
+        line-height: 2.2rem
+        font-weight: 500
+        margin-right: 15.5rem
+        width: 17.7rem
+        a
+            display: flex
+            align-items: center
+    &__social
+        grid-column: 1 / 2
+        grid-row: 2 / 3
+        align-self: end
+        a
+            margin-right: 1rem
+            &:last-child
+                margin-right: 0rem
+    &__form
+        grid-column: 4 / 5
+        grid-row: 2 / 3
+        form
+            position: relative
+            input
+                border: .1rem solid #C4C4C4
+                border-radius: .4rem
+                padding: 1.15rem
+                width: 42rem
+                margin-top: 1rem
+                &::placeholder
+                    font-size: 1.4rem
+                    line-height: 1.7rem
+                    font-weight: 500
+            label
+                font-size: 1.6rem
+                line-height: 2rem
+                font-weight: 500
+                max-width: 33rem
+                margin-bottom: 5rem
+            button
+                position: absolute
+                right: 0
+                bottom: 0
+                font-size: 1.6rem
+                line-height: 2rem
+                font-weight: 500
+                padding: 1rem 2rem
+                background-color: $color-light-green
+                border-radius: .3rem
+                border: none
+                width: 15rem
+                &:hover
+                    cursor: pointer
+                    background-color: $color-dark-green
+                    color: $color-white-2
+    &__contacts
+        grid-column: 4 / 5
+        grid-row: 2 / 3
+        margin-top: 19rem
+        font-size: 1.8rem
+        line-height: 2.2rem
+    &__registration
+        grid-row: 4 / 5
+        max-width: 70rem
+        grid-column: 1 / 4
+        margin-bottom: 5rem
+    &__politic
+        grid-column: 2 / -1
+        justify-content: end
+.nav-1
+    grid-row: 2 / span 1
+    grid-column: 2 / 3
+    margin-right: 11.3rem   
+    &__list
+        list-style-type: none
+    &__item
+        margin-bottom: 1rem
+        &:last-child
+            margin-bottom: 0rem
+    &__link
+        font-size: 1.6rem
+        line-height: 2rem
+        text-transform: capitalize
+        font-feature-settings: 'case' on
+        &:hover
+            color: $color-light-green
+
+.nav-2
+    grid-row: 2 / span 1
+    grid-column: 3 / 4  
+    margin-right: 12.7rem 
+    &__list
+        list-style-type: none
+    &__item
+        margin-bottom: 1rem
+        &:last-child
+            margin-bottom: 0rem
+    &__link
+        font-size: 1.6rem
+        line-height: 2rem
+        text-transform: capitalize
+        font-feature-settings: 'case' on
+        &:hover
+            color: $color-light-green
+.contacts
+    &__time
+        grid-column: 4 / 5
+        grid-row: 2 / 3
+        font-size: 1.8rem
+        line-height: 2.2rem
+        margin-top: 28rem
+    &__town
+        margin-bottom: 2rem
+
+.razrab
+    display: flex
+    align-items: center
+    font-size: 1.3rem
+    line-height: 1.7rem
+    margin-top: 2rem
+    margin-bottom: 0.5rem
+    &__text-1
+        margin-right: 1.5rem
+    &__img
+        width: 3.8rem
+        height: 3.4rem
+        margin-right: 0.5rem
+
+.politic
+    display: flex
+    font-size: 1.3rem
+    line-height: 1.7rem
+    margin-top: 3rem
+    &__text-1
+        margin-right: 4.7rem
+    &__text-2
+        margin-right: 4.7rem
+
+.footer-bg
+    position: absolute
+    z-index: -10
+    background-color: $color-green
+    width: 100%
+    height: 67rem
+    top: -5.3rem
+    
+    
+    &__img-1
+        position: absolute
+        left: 0
+        bottom: 0
+    &__img-2
+        position: absolute
+        transform: matrix(-1, 0, 0, 1, 0, 0)
+        top: 0
+        right: 0
+
+.footer-bottom
+    img
+        margin-right: 4rem
+        &:last-child
+            margin-right: 0rem

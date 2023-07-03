@@ -1,0 +1,93 @@
+.flowers
+    width: 100%
+    display: grid
+    grid-template-rows: 1fr 1fr
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
+    gap: 2rem
+    margin-bottom: 10rem
+    position: relative
+    z-index: 2
+    @include respond(lap-top)
+        grid-template-columns: repeat(4, 1fr)
+    &__flower
+        position: absolute
+        right: -20%
+        top: -35%
+        z-index: -5
+    &__menu
+        visibility: hidden
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: repeat(5, min-content)
+        font-size: 1.8rem
+        line-height: 2.3rem
+        color: $color-black
+        column-gap: 3rem
+        width: 46.2rem
+        height: 30.5rem
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+        padding: 2rem
+        position: absolute
+        z-index: 50
+        background-color: $color-white
+        a
+            border-bottom: .1rem solid $color-black
+            padding: 1.5rem
+            width: 20rem
+            &:hover
+                color: #B9956F
+/*     &__drop
+        position: relative
+        &:hover .flowers__menu
+            visibility: visible */
+            
+            
+            
+
+.flowers-card
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    min-width: 20rem
+    min-height: 13rem
+    border-radius: .4rem
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+    background-color: transparent
+    &:hover
+        background-color: $color-dark-green
+    &__img
+        width: 5.6rem
+        height: 5.6rem
+        margin-bottom: 1rem
+    &__text
+        font-size: 1.8rem
+        line-height: 2.3rem
+        color: $color-green
+        &:hover
+            color: $color-white-2
+
+    &__item-11
+        grid-row: 1 / 3
+        grid-column: 6 / 7
+        min-width: 20rem
+        min-height: 28rem
+
+
+    
+    
+
+
+
+
+        
+
+
+
+   
+    
+    
+
+
+    
+    
